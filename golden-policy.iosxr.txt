@@ -902,25 +902,45 @@ prefix-set AS20049
  216.52.242.0
 end-set
 route-policy golden-prefix-list
-if destination in AS19836 and as-path originates-from '19836' then pass else drop exit
-if destination in AS2149 and as-path originates-from '2149' then pass else drop exit
-if destination in AS27 and as-path originates-from '27' then pass else drop exit
-if destination in AS297 and as-path originates-from '297' then pass else drop exit
-if destination in AS3557 and as-path originates-from '3557' then pass else drop exit
-if destination in AS5927 and as-path originates-from '5927' then pass else drop exit
-if destination in AS13 and as-path originates-from '13' then pass else drop exit
-if destination in AS29216 and as-path originates-from '29216' then pass else drop exit
-if destination in AS26415 and as-path originates-from '26415' then pass else drop exit
-if destination in AS25152 and as-path originates-from '25152' then pass else drop exit
-if destination in AS20144 and as-path originates-from '20144' then pass else drop exit
-if destination in AS7500 and as-path originates-from '7500' then pass else drop exit
-if destination in AS15169 and as-path originates-from '15169' then pass else drop exit
-if destination in AS32934 and as-path originates-from '32934' then pass else drop exit
-if destination in AS26101 and as-path originates-from '26101' then pass else drop exit
-if destination in AS55967 and as-path originates-from '55967' then pass else drop exit
-if destination in AS14907 and as-path originates-from '14907' then pass else drop exit
-if destination in AS13414 and as-path originates-from '13414' then pass else drop exit
-if destination in AS16509 and as-path originates-from '16509' then pass else drop exit
-if destination in AS20049 and as-path originates-from '20049' then pass else drop exit
+if destination in AS19836 and as-path originates-from '19836' then pass exit
+if destination in AS19836 then drop exit
+if destination in AS2149 and as-path originates-from '2149' then pass exit
+if destination in AS2149 then drop exit
+if destination in AS27 and as-path originates-from '27' then pass exit
+if destination in AS27 then drop exit
+if destination in AS297 and as-path originates-from '297' then pass exit
+if destination in AS297 then drop exit
+if destination in AS3557 and as-path originates-from '3557' then pass exit
+if destination in AS3557 then drop exit
+if destination in AS5927 and as-path originates-from '5927' then pass exit
+if destination in AS5927 then drop exit
+if destination in AS13 and as-path originates-from '13' then pass exit
+if destination in AS13 then drop exit
+if destination in AS29216 and as-path originates-from '29216' then pass exit
+if destination in AS29216 then drop exit
+if destination in AS26415 and as-path originates-from '26415' then pass exit
+if destination in AS26415 then drop exit
+if destination in AS25152 and as-path originates-from '25152' then pass exit
+if destination in AS25152 then drop exit
+if destination in AS20144 and as-path originates-from '20144' then pass exit
+if destination in AS20144 then drop exit
+if destination in AS7500 and as-path originates-from '7500' then pass exit
+if destination in AS7500 then drop exit
+if destination in AS15169 and as-path originates-from '15169' then pass exit
+if destination in AS15169 then drop exit
+if destination in AS32934 and as-path originates-from '32934' then pass exit
+if destination in AS32934 then drop exit
+if destination in AS26101 and as-path originates-from '26101' then pass exit
+if destination in AS26101 then drop exit
+if destination in AS55967 and as-path originates-from '55967' then pass exit
+if destination in AS55967 then drop exit
+if destination in AS14907 and as-path originates-from '14907' then pass exit
+if destination in AS14907 then drop exit
+if destination in AS13414 and as-path originates-from '13414' then pass exit
+if destination in AS13414 then drop exit
+if destination in AS16509 and as-path originates-from '16509' then pass exit
+if destination in AS16509 then drop exit
+if destination in AS20049 and as-path originates-from '20049' then pass exit
+if destination in AS20049 then drop exit
 end-policy
 end
