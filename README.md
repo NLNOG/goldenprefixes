@@ -17,7 +17,7 @@ are present: 'list' and 'notes'.
 
 ### 'list' file format ###
 
-One exact IPv4 or IPv6 prefix per line.
+One exact IPv4 or IPv6 prefix per line. The lines must be sort(1)'ed.
 
 ### 'notes' file format ###
 
