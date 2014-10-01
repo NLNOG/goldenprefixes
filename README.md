@@ -13,11 +13,11 @@ Directory Layout
 
 Each Autonomous System is represented by a directory starting with 'AS'
 followed by the number. In each of these AS specific directories two files
-are present: 'list' and 'notes'.
+are present: ```list``` and ```notes```.
 
 ### 'list' file format ###
 
-One exact IPv4 or IPv6 prefix per line. The lines must be sort(1)'ed.
+One exact IPv4 or IPv6 prefix per line. The list files must be piped through ```sort -n``` before changes are submitted.
 
 ### 'notes' file format ###
 
