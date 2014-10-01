@@ -23,6 +23,15 @@ One exact IPv4 or IPv6 prefix per line. The list files must be piped through ```
 
 Anything goes.
 
+### 'auth' file format ###
+
+If a hmproject participant opts to PGP sign their 'list' file, consumers of the
+hmproject data are required to validate the signature file associated with the
+list file. In the ```auth``` file each line represents an ASN followed by one
+or more PGP keys, delimited by spaces. The ```auth``` file itself is signed by
+Job Snijders <job@ntt.net> and Jared Mauch <jared@puck.nether.net>. All PGP
+signatures are detached and ASCII armored.
+
 Example policy
 --------------
 
