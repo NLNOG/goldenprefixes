@@ -1,0 +1,9 @@
+- Full write up how the process works
+- New participants need two people to vouch for them
+- Outsource daily maintenance a third party
+- Ask 50 euro per year per ASN, for the money the following:
+    * initial validation of AS ownershop
+    * yearly keepalive check
+    * oversee process of adding and removing prefixes
+- write software to generate policies for common platforms
+
